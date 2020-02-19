@@ -9,22 +9,24 @@ class neteaselock  implements Lock {
     public void lock() {
 
     }
-
-    public void lockInterruptibly() throws InterruptedException {
-
-    }
     @Override
     public  boolean tryLock() {
         return true;
     }
+    public void unlock() {
+
+    }
+
+
+    public void lockInterruptibly() throws InterruptedException {
+
+    }
+
 
     public boolean tryLock (long time, TimeUnit unit) {
         return false;
     }
 
-    public void unlock() {
-
-    }
 
     public Condition newCondition() {
 
